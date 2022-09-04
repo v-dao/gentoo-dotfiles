@@ -1,0 +1,73 @@
+{
+	"name": "bottom",
+	"layer": "top",
+	"position": "top",
+	"modules-left": [
+		"custom/launcher",
+		"clock",
+	],
+	"modules-center": [
+		"wlr/taskbar",
+	],
+	"modules-right": [
+		"network",
+		"pulseaudio",
+		"battery",
+	],
+	"custom/launcher": {
+		"format": " ",
+		"font-size": 33,
+	},
+	"clock":{
+		"interval": 1,
+		"format": "{:%I:%M %p %d/%m%Y}",
+		"tooltip": false
+	},
+	"wlr/taskbar": {
+		"format": "{icon}",
+		"icon-size": 27,
+		"icon-theme": "Arc",
+		"tooltip-format": "{title}",
+		"on-click": "activate",
+		"on-click-middle": "close",
+		"on-click-right": "minimize"
+	},
+	"network": {
+		"interval": 1,
+	    	"format-wifi": "說 {essid}",
+	    	"format-ethernet": "  {ifname} ({ipaddr})",
+	    	"format-linked": "說 {essid} (No IP)",
+	    	"format-disconnected": "說 Disconnected",
+	    	"tooltip": false
+	},
+	"pulseaudio":{
+		"scroll-step": 1,
+		"format": "{icon} {volume}",
+		"format-muted": "婢 Muted",
+		"format-icons": {
+      			"default": ["", "", ""]
+    		},
+    		"states": {
+      			"warning": 85,
+    		},
+    		"scroll-step": 1,
+    		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    		"tooltip": false,
+	},
+	"battery": {
+	    "interval": 10,
+	    "states": {
+	      "warning": 20,
+	      "critical": 10
+	    },
+	    "format": "{icon} {capacity}%",
+	    "format-icons": ["", "", "", "", "", "", "", "", ""],
+	    "format-full": "{icon} {capacity}%",
+	    "format-charging": " {capacity}%",
+	    "tooltip": false
+  	},	    
+	"tray": {
+		"icon-size": 26,
+	},
+
+}
