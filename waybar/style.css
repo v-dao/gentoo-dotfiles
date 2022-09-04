@@ -28,26 +28,27 @@ window#waybar.hidden {
 
 #taskbar {
 	margin-top: 6px;
-	margin-bottom: 6px;
-	border-radius: 10px;
-	background: transparent;
+	border-radius: 12px 12px 0px 0px;
+	padding: 0px 4px;
 }
 
 #taskbar button {
-	margin-left: 8px;
-	background: #aae2d1;
+	border-radius: 0px;
+	margin: 0px 4px 6px 4px;
+	padding: 0px 2px;
+	border-bottom: 2px solid #9ccfd8;
 }
 
 #taskbar button.active {
-	background: #dc8add;
+	border-bottom: 2px solid #dc8add;
 }
 
 #taskbar button.minimized {
-	background: #333333;
+	border-bottom: 2px solid #f6c177;
 }
 
 #taskbar button:hover{
-	background: #dc8add;
+	background-color: #c4a7e7;
 }
 
 #clock {
@@ -123,6 +124,4 @@ window#waybar.hidden {
 	transition: none;
 	color: #89dceb;
 	background: #161320;
-
-
 }
