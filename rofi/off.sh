@@ -27,11 +27,11 @@ icons[cancel]="\u00d7"
 
 declare -A actions
 actions[lockscreen]="sh $HOME/.config/sway/swaylock.sh"
-actions[logout]="loginctl terminate-session ${XDG_SESSION_ID-}"
-actions[suspend]="systemctl suspend"
-actions[hibernate]="systemctl hibernate"
-actions[reboot]="systemctl reboot"
-actions[shutdown]="systemctl poweroff"
+actions[logout]="wayland-logout"
+actions[suspend]=""
+actions[hibernate]=""
+actions[reboot]=""
+actions[shutdown]=""
 
 # By default, ask for confirmation for actions that are irreversible
 confirmations=(reboot shutdown logout)
