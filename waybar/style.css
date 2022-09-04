@@ -36,15 +36,15 @@ window#waybar.hidden {
 	border-radius: 0px;
 	margin: 0px 4px 6px 4px;
 	padding: 0px 2px;
-	border-bottom: 2px solid #9ccfd8;
+	border-bottom: 4px solid #9ccfd8;
 }
 
 #taskbar button.active {
-	border-bottom: 2px solid #dc8add;
+	border-bottom: 4px solid #dc8add;
 }
 
 #taskbar button.minimized {
-	border-bottom: 2px solid #f6c177;
+	border-bottom: 4px solid #f6c177;
 }
 
 #taskbar button:hover{
