@@ -34,6 +34,9 @@ Win+Shift+Enter=open rofi
 Win+Esc=open power menu
 Win+Q=close window
 
+# list installed
+qlist -IRc
+
 
 # software list
 app-admin/sudo
